@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   margin: 0px;
 }
@@ -11,13 +11,18 @@ body {
   padding: 25px 40px 40px 40px;
 }
 
+.profile-container {
+  display: grid;
+  padding: 38px;
+}
+
 .resume-container {
   height: 100vh;
 }
 
 .section-header {
   font-size: 18px;
-  border-bottom: 1px solid black;
+  text-decoration: underline;
 }
 
 .intro-wrapper {
@@ -73,21 +78,33 @@ body {
   color: black;
 }
 
-.portfolio-items-wrapper {
+.intro-items-wrapper {
   display: flex;
   /* grid-template-columns: 1fr 1fr 1fr; */
+}
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .portfolio-item-wrapper {
   position: relative;
 }
 
-.portfolio-img-background {
+.intro-img-background {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
   width: 25%;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
 }
 
 .skills-wrapper {
@@ -96,7 +113,7 @@ body {
   justify-content: space-evenly;
 }
 .skills-img {
-  height: 150px;
+  height: 100px;
 }
 
 .skills-text {
