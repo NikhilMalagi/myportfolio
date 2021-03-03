@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css">
+        <title>MyPortfolio</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+              <div class="right-side">
+                <div class="nav-link-wrapper active-nav-link">
+                  <a href="index.html">Home</a>
+                </div>
+        
+                <div class="nav-link-wrapper">
+                  <a href="work.html">Profile</a>
+                </div>
+                <div class="nav-link-wrapper">
+                  <a href="resume.html">Resume</a>
+                </div>
+              </div>
+      
+            </div>
+        
+            <div class="intro-wrapper">
+              <div class="portfolio-items-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/dwight.jpg)"></div>
+                  <div class="intro-content">
+                    <div style="flex-grow:1;"><strong style="font-size: 18px;">Hi, I'm Nikhil Malagi</strong><div>I'm a React front end developer,passionate about developing intuitive UI/UX web applications.</div></div>
+                    <div style="flex-grow:2;">
+                      <div><strong class="section-header">Professional Experience</strong></div>
+                      <p class="line-break"></p>
+                      <ul><li>I have an experience of working extensively on complete life cycle of software development including analysis of requirement, design and documentation, development, deployment and testing of web applications.</li><li>Over 3.7 years of IT experience which includes 3+ years extensive expertise as a ReactJS developer.</li><li>Delivered application built using ReactJS, Javascript, typescript, HTML, CSS, ES6, Redux, Webpack, OOPS, and Jest.Posses basic knowledege on Node JS, Express JS, Java, Junit testing, PostgreSQL, docker and Jenkins.</li></ul>
+                    </div>
+                  </div>
+              </div> 
+            </div>
+          <br>
+          <div class="portfolio-item-wrapper">
+            <div><strong class="section-header">Skills</strong></div>
+            <p class="line-break"></p>
+            <div>Proficient At :</div>
+            <div class="skills-wrapper">
+              <div>
+                <img class="skills-img" src="images/JS.png">
+                <div class="skills-text">Javascript</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/CSS.png">
+                <div class="skills-text">CSS</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/html.png">
+                <div class="skills-text">Html</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/React.png">
+                <div class="skills-text">React</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/Redux.png">
+                <div class="skills-text">Redux</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/Typescript.png">
+                <div class="skills-text">Typescript</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/Webpack.png">
+                <div class="skills-text">Webpack</div>
+              </div>
+            </div>
+            <p class="line-break"></p>
+            <div>Exposure To :</div>
+            <div class="skills-wrapper">
+              <div>
+                <img class="skills-img" src="images/NodeJS.png">
+                <div class="skills-text">NodeJS</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/ExpressJS.png">
+                <div class="skills-text">ExpressJS</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/Mongo.png">
+                <div class="skills-text">MongoDB</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/docker.png">
+                <div class="skills-text">Docker</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/Postgres.png">
+                <div class="skills-text">PostgreSQL</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/Openshift.png">
+                <div class="skills-text">Openshift</div>
+              </div>
+              <div>
+                <img class="skills-img" src="images/Java.png">
+                <div class="skills-text">Java</div>
+              </div>
+            </div>
+          </div>
+    </body>
+
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+      
+        portfolioItems.forEach(portfolioItem => {
+          portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+          });
+      
+          portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+          });
+        });
+      
+      </script>
+</html>
